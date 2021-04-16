@@ -16,12 +16,10 @@
  * Return: retorna un int si funciona.
  */
 
-int sumar(int* opUno,int* opDos);
-
-int multiplicar(int* opUno,int* opDos);
-
-int restar(int* opUno,int* opDos);
-
-int dividir(int* flagValidez, int* x,int* y);
+int sumar(int opUno,int opDos,int* resSuma);
+int multiplicar(int opUno,int opDos,int* resMult);
+int restar(int opUno,int opDos,int* resResta);
+int multiplicar(int opUno,int opDos,int* resMult);
+int dividir(int opUno,int opDos,int* resDiv);
 
 #endif /* BIBLIOTECAMENU_H_ */

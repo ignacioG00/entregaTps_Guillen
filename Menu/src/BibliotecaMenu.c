@@ -8,54 +8,60 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sumar(int* opUno,int* opDos)
+int sumar(int opUno,int opDos,int* resSuma)
 {
-	int x = *opUno;
-	int y = *opDos;
+	int x=opUno;
+	int y=opDos;
+	int res;
 
-	int res = x + y;
-
-	printf("El resultado es: %d\n", res);
-
-	return 0;
-}
-
-int restar(int* opUno,int* opDos)
-{
-	int x = *opUno;
-	int y = *opDos;
-
-	int res = x - y;
-
-	printf("El resultado es: %d\n", res);
-
-	return 0;
-}
-
-int multiplicar(int* opUno,int* opDos)
-{
-	int x = *opUno;
-	int y = *opDos;
-
-	int res = x * y;
-
-	printf("El resultado es: %d\n", res);
-
-	return 0;
-}
-
-int dividir(int* flagValidez, int* x,int* y)
-{
-	float res =(float) *x / *y;
-
-	if (*y==0)
+	if(resSuma!=NULL)
 	{
-		*flagValidez=-1;
-		printf("No es posible dividir por cero");
-	}else{
-		*flagValidez=1;
-		printf("El resultado de A/B es: %f", res);
+		res=x+y;
+		*resSuma=1;
 	}
+	return res;
+}
 
-	return *flagValidez;
+int restar(int opUno,int opDos,int* resResta)
+{
+	int x=opUno;
+	int y=opDos;
+	int res;
+
+	if(resResta!=NULL)
+	{
+		res=x-y;
+		*resResta=1;
+	}
+	return res;
+}
+
+int multiplicar(int opUno,int opDos,int* resMult)
+{
+	int x=opUno;
+	int y=opDos;
+	int res;
+
+	if(resMult!=NULL)
+	{
+		res=x*y;
+		*resMult=1;
+	}
+	return res;
+}
+
+int dividir(int opUno,int opDos,int* resDiv)
+{
+	float res;
+	float x=opUno;
+	float y=opDos;
+
+	if ((resDiv!=NULL) && (y!=0))
+	{
+		res = x / y;
+		*resDiv= 1;
+	}else{
+		*resDiv= -1;
+	}
+	return res;
 }
