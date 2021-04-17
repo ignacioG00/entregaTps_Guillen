@@ -18,18 +18,9 @@ int sumar(int opUno,int opDos,int* resulSuma);
  * Return: retorna un [1] si el programa funciono, [0] caso contrario.
  */
 
-int multiplicar(int opUno,int opDos,int* resulMult);
-/**
- * Brief: Realiza una suma de dos numeros ingresados.
- * Parámetro opUno: recibe un operando int.
- * Parámetro opDos: recibe un segundo operando int.
- * Parámetro resulSuma: un puntero que recibe el valor del resultado de la operacion.
- * Return: retorna un [1] si el programa funciono, [0] caso contrario.
- */
-
 int restar(int opUno,int opDos,int* resulResta);
 /**
- * Brief: Realiza una suma de dos numeros ingresados.
+ * Brief: Realiza una resta de dos numeros ingresados.
  * Parámetro opUno: recibe un operando int.
  * Parámetro opDos: recibe un segundo operando int.
  * Parámetro resulSuma: un puntero que recibe el valor del resultado de la operacion.
@@ -38,7 +29,7 @@ int restar(int opUno,int opDos,int* resulResta);
 
 int multiplicar(int opUno,int opDos,int* resulMult);
 /**
- * Brief: Realiza una suma de dos numeros ingresados.
+ * Brief: Realiza una multiplicacion entre dos numeros ingresados.
  * Parámetro opUno: recibe un operando int.
  * Parámetro opDos: recibe un segundo operando int.
  * Parámetro resulSuma: un puntero que recibe el valor del resultado de la operacion.

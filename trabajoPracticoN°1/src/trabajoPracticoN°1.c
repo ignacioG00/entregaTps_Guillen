@@ -33,12 +33,12 @@ e) “El factorial de A es: r1 y El factorial de B es: r2”
 
 int main(void) {
 
-	int* retorno = 0;
+	int retorno = 0;
 
 	do{
 	mostrarMenu(&retorno);
 	}
-	while(*retorno!=1);
+	while(retorno!=1);
 
 	return EXIT_SUCCESS;
 }
