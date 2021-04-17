@@ -1,0 +1,20 @@
+/*
+ * utn.h
+ *
+ *  Created on: 17 abr. 2021
+ *      Author: ignac
+ */
+
+#ifndef UTN_H_
+#define UTN_H_
+
+/**
+* \brief Muestra un menu de calculadora.
+* <La funcion genera un menu con 5 opciones
+* simulando una calculadora.>
+* \param retorno es un puntero que retorna:
+*  [0] si el programa esta en funcionamiento ,y [1] si no.
+*/
+void mostrarMenu(int* retorno);
+
+#endif /* UTN_H_ */

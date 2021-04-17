@@ -1,0 +1,80 @@
+/*
+ * BibliotecaMenu.c
+ *
+ *  Created on: 9 abr. 2021
+ *      Author: ignac
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int sumar(int opUno,int opDos,int* resulSuma)
+{
+	int x=opUno;
+	int y=opDos;
+	int flagSuma;
+
+	if(resulSuma!=NULL)
+	{
+		*resulSuma=x+y;
+		flagSuma=1;
+	}
+	return flagSuma;
+}
+
+int restar(int opUno,int opDos,int* resulResta)
+{
+	int x=opUno;
+	int y=opDos;
+	int flagResta;
+
+	if(resulResta!=NULL)
+	{
+		*resulResta=x-y;
+		flagResta=1;
+	}
+	return flagResta;
+}
+
+int multiplicar(int opUno,int opDos,int* resulMult)
+{
+	int x=opUno;
+	int y=opDos;
+	int flagMult;
+
+	if(resulMult!=NULL)
+	{
+		*resulMult=x*y;
+		flagMult=1;
+	}
+	return flagMult;
+}
+
+int dividir(int opUno,int opDos,float* resulDiv)
+{
+	int flagDiv;
+	float x=opUno;
+	float y=opDos;
+
+	if ((resulDiv!=NULL) && (y!=0))
+	{
+		*resulDiv =(float) x / y;
+		flagDiv= 1;
+	}
+	return flagDiv;
+}
+
+int factorial(int operando,int* resFact)
+{
+	int res;
+	int i;
+
+	if(resFact!=NULL){
+	for(i=1;i<operando;i++)
+		{
+		res= res * i;
+		}
+	*resFact=1;
+	}
+	return res;
+}

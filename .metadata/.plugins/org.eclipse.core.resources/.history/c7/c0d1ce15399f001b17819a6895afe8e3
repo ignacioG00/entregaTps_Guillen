@@ -1,0 +1,23 @@
+/*
+ * utn.h
+ *
+ *  Created on: 17 abr. 2021
+ *      Author: ignac
+ */
+
+#ifndef UTN_H_
+#define UTN_H_
+
+/**
+* \brief Muestra un menu de calculadora.
+* \param retorna
+* \param message Es el mensaje a ser mostrado
+* \param eMessage Es el mensaje a ser mostrado en caso de error
+* \param lowLimit Limite inferior a validar
+* \param hiLimit Limite superior a validar
+* \return Si obtuvo el numero [0] si no [-1]
+*
+*/
+
+
+#endif /* UTN_H_ */

@@ -1,0 +1,19 @@
+/*
+ * utn.h
+ *
+ *  Created on: 17 abr. 2021
+ *      Author: ignac
+ */
+
+#ifndef UTN_H_
+#define UTN_H_
+
+
+/*
+ * Brief: muestra un menu y le pide al usuario que operacion quiere realizar.
+ * Parámetro: recibe como parámetro un puntero. Recibe [0]
+ *
+ */
+void mostrarMenu(int* retorno);
+
+#endif /* UTN_H_ */

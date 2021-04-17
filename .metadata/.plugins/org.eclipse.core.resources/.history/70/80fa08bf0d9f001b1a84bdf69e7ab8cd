@@ -1,0 +1,126 @@
+/*
+ ============================================================================
+ Name        : Menu.c
+ Author      : Guillen ignacio
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hacer una calculadora. Para ello el programa iniciará y contará con un menú de opciones:
+1. Ingresar 1er operando (A=x)
+2. Ingresar 2do operando (B=y)
+3. Calcular todas las operaciones
+a) Calcular la suma (A+B)
+b) Calcular la resta (A-B)
+c) Calcular la division (A/B)
+d) Calcular la multiplicacion (A*B)
+e) Calcular el factorial (A!)
+4. Informar resultados
+a) “El resultado de A+B es: r”
+b) “El resultado de A-B es: r”
+c) “El resultado de A/B es: r” o “No es posible dividir por cero”
+d) “El resultado de A*B es: r”
+e) “El factorial de A es: r1 y El factorial de B es: r2”
+5. Salir
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "BibliotecaMenu.h"
+
+int mostrarMenu();
+
+int main(void) {
+
+	int* retorno = 0;
+
+	do{
+	mostrarMenu(&retorno);
+	}
+	while(*retorno!=1);
+
+	return EXIT_SUCCESS;
+}
+
+	int mostrarMenu(int* retorna)
+	{
+		setbuf(stdout, NULL);
+		int opcionMenu= 0;//opciones de menu a elegir.
+
+		int a=0;
+		int b=0;
+
+		int flagFunciona=0; //si da 0 entonces hay error, si da funcionan.
+
+		//CALCULOS
+		int flagCalculos=0;//si el valor es 0, entonces no se realizaron los calculos, si es 1 si.
+		int* resulSuma;
+		int* resulResta;
+		float* resulDiv;
+		int* resulMult;
+		int* resulFactorialUno;
+		int* resulFactorialDos;
+
+		printf("¡Bienvenido a la Calculadora!");
+		do{
+			printf("\n1)Ingresar primer numero. \n2)Ingresar segundo numero. \n3)Calculos \n4)Informar resultados. \n5)Salir.");
+			scanf("%d", &opcionMenu);
+		switch(opcionMenu)
+		{
+		case 1:
+			printf("ingrese el primer numero:");
+			scanf("%d", &a);
+			break;
+		case 2:
+			printf("ingrese el segundo numero:");
+			scanf("%d", &b);
+			break;
+		case 3:
+			flagFunciona=sumar(a,b,&resulSuma);
+			flagFunciona=restar(a,b,&resulResta);
+			flagFunciona=multiplicar(a,b,&resulMult);
+			flagFunciona=factorial(a,&resulFactorialUno);
+			flagFunciona=factorial(b,&resulFactorialDos);
+			flagFunciona=dividir(a,b,&resulDiv);
+
+			if(flagFunciona)//Si la variable es 1, entonces las funciones estan bien. Caso contrario dara 0.
+			{
+				printf("Se han realizado los calculos con exito.");
+			}else{
+				printf("Error en los calculos.Reingresar datos!");
+			}
+			flagCalculos=1;
+			break;
+		case 4:
+			if(flagCalculos){
+			printf("El resultado de A+B es: %d \n", resulSuma);
+			printf("El resultado de A-B es: %d \n", resulResta);
+			printf("El resultado de A*B es: %d \n", resulMult);
+
+			if(flagFunciona==0){
+				printf("No es posible dividir por cero \n");
+			}else{
+				printf("El resultado de A/B es: %f \n", resulDiv);
+			}
+			printf("El factorial de A es: %d \n", resulFactorialUno);
+			printf("\n y El factorial de B es: %d \n", resulFactorialDos);
+			}
+			break;
+
+		case 5:
+			printf("¡Gracias por utilizar la calculadora!");
+			*retorna = 1;
+			break;
+
+		default:
+			printf("Error.Reingrese una opcion: \n1)Ingresar primer numero. \n2)Ingresar segundo numero. \n3)Calculos \n4)Informar resultados. \n5)Salir.");
+			scanf("%d", &opcionMenu);
+			}
+		}
+		while(opcionMenu!=5);
+
+		return 0;
+	}
+
+
+
+

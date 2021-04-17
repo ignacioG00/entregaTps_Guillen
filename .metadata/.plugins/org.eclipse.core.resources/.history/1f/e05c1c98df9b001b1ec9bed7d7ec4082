@@ -1,0 +1,28 @@
+/*
+ * BibliotecaMenu.h
+ *
+ *  Created on: 9 abr. 2021
+ *      Author: ignacio Guillen
+ */
+
+#ifndef BIBLIOTECAMENU_H_
+#define BIBLIOTECAMENU_H_
+
+
+int mostrarMenu(int punteroMenu);
+/*
+ * Brief: muestra un menu y le pide al usuar que operacion quiere realizar.
+ * Parámetro: recibe como parámetro un puntero.
+ * Return: retorna un int si funciona.
+ */
+
+int suma(int* opUno,int* opDos);
+
+
+#endif /* BIBLIOTECAMENU_H_ */
+
+int dividir(int* flagValidez, int* x,int* y);
+
+int multiplicar(int* opUno,int* opDos);
+
+int restar(int* opUno,int* opDos);
