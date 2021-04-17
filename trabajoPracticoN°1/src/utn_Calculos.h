@@ -9,18 +9,59 @@
 #define UTN_CALCULOS_H_
 
 
-//int mostrarMenu(int punteroMenu);
-/*
- * Brief: muestra un menu y le pide al usuar que operacion quiere realizar.
- * Parámetro: recibe como parámetro un puntero.
- * Return: retorna un int si funciona.
+int sumar(int opUno,int opDos,int* resulSuma);
+/**
+ * Brief: Realiza una suma de dos operandos.
+ * Parámetro opUno: recibe un operando int.
+ * Parámetro opDos: recibe un segundo operando int.
+ * Parámetro resulSuma: un puntero que recibe el valor del resultado de la operacion.
+ * Return: retorna un [1] si el programa funciono, [0] caso contrario.
  */
 
-int sumar(int opUno,int opDos,int* resulSuma);
 int multiplicar(int opUno,int opDos,int* resulMult);
+/**
+ * Brief: Realiza una suma de dos numeros ingresados.
+ * Parámetro opUno: recibe un operando int.
+ * Parámetro opDos: recibe un segundo operando int.
+ * Parámetro resulSuma: un puntero que recibe el valor del resultado de la operacion.
+ * Return: retorna un [1] si el programa funciono, [0] caso contrario.
+ */
+
 int restar(int opUno,int opDos,int* resulResta);
+/**
+ * Brief: Realiza una suma de dos numeros ingresados.
+ * Parámetro opUno: recibe un operando int.
+ * Parámetro opDos: recibe un segundo operando int.
+ * Parámetro resulSuma: un puntero que recibe el valor del resultado de la operacion.
+ * Return: retorna un [1] si el programa funciono, [0] caso contrario.
+ */
+
 int multiplicar(int opUno,int opDos,int* resulMult);
-int dividir(int opUno,int opDos,int* resulDiv);
+/**
+ * Brief: Realiza una suma de dos numeros ingresados.
+ * Parámetro opUno: recibe un operando int.
+ * Parámetro opDos: recibe un segundo operando int.
+ * Parámetro resulSuma: un puntero que recibe el valor del resultado de la operacion.
+ * Return: retorna un [1] si el programa funciono, [0] caso contrario.
+ */
+
+int dividir(int opUno,int opDos,float* resulDiv);
+/**
+ * Brief: Realiza una division entre dos numeros ingresados.
+ * Parámetro opUno: recibe un operando int.
+ * Parámetro opDos: recibe un segundo operando int.
+ * Parámetro resulSuma: un puntero que recibe el valor del resultado de la operacion.
+ * Return: retorna un [1] si el programa funciono, [0] caso contrario.
+ */
+
 int factorial(int operando,int* resulFact);
+/**
+ * Brief: Realiza el factoreo de un entero ingresado.
+ * Parámetro opUno: recibe un operando int.
+ * Parámetro opDos: recibe un segundo operando int.
+ * Parámetro resulSuma: un puntero que recibe el valor del resultado de la operacion.
+ * Return: retorna un [1] si el programa funciono, [0] caso contrario.
+ */
+
 
 #endif /* UTN_CALCULOS_H_ */
