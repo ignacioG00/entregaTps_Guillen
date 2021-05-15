@@ -284,3 +284,580 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c"
   int flagContrib = 0;
       ^~~~~~~~~~~
 gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+01:02:29 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:44:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+..\Main.c:68:48: error: 'id' undeclared (first use in this function)
+    if (removeEmployee(Empleado, TAM_EMPLEADOS, id)) {
+                                                ^~
+..\Main.c:68:48: note: each undeclared identifier is reported only once for each function it appears in
+..\Main.c:85:5: error: expected ';' before 'printf'
+     printf("INGRESE QUE QUIERE INFORMAR:\n ");
+     ^~~~~~
+..\Main.c:97:11: error: expected expression before '/' token
+    break;*/
+           ^
+01:11:25 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:44:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+..\Main.c:86:5: error: expected ';' before 'printf'
+     printf("INGRESE QUE QUIERE INFORMAR:\n ");
+     ^~~~~~
+..\Main.c:98:11: error: expected expression before '/' token
+    break;*/
+           ^
+01:11:49 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:44:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:248:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file trabajoPracticoN°2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:12:06 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file trabajoPracticoN°2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:12:09 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+01:19:28 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:44:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:246:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file trabajoPracticoN°2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:19:31 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+Info: Nothing to build for trabajoPracticoN°2
+01:20:03 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:44:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+01:21:16 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:44:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file trabajoPracticoN°2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:21:19 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+01:23:24 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:44:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+01:27:54 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:246:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+..\ArrayEmployees.c:256:22: error: too few arguments to function 'get_FloatRange'
+   auxEmpleado.salary=get_FloatRange("> INGRESE EL SALARIO\n","> ERROR.REINGRESE EL SALARIO:\n",21600,38000);
+                      ^~~~~~~~~~~~~~
+In file included from ..\ArrayEmployees.c:8:0:
+..\Biblioteca.h:28:7: note: declared here
+ float get_FloatRange(char *msj,char *msjError,float minimo, float maximo,int reintentos);
+       ^~~~~~~~~~~~~~
+01:28:32 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:246:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file trabajoPracticoN°2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:28:34 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+01:32:46 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Biblioteca.o "..\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:246:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:40:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file trabajoPracticoN°2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:32:50 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+Info: Nothing to build for trabajoPracticoN°2
+01:33:18 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:40:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+01:38:06 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:246:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:40:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico)==1)
+       ^~~~~~~~~~
+..\Main.c:92:5: error: expected ';' before 'printf'
+     printf("INGRESE QUE QUIERE INFORMAR:\n ");
+     ^~~~~~
+01:38:24 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:40:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico)==1)
+       ^~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+01:38:38 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:40:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+01:40:09 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:40:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,idAutomatico))
+       ^~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+01:56:04 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:40:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+..\Main.c:97:6: error: a label can only be part of a statement and a declaration is not a statement
+      int orden;
+      ^~~
+01:56:28 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:246:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Biblioteca.o "..\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:41:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+Info: Nothing to build for trabajoPracticoN°2
+02:31:29 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:41:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'orderEmployees':
+..\ArrayEmployees.c:169:11: warning: implicit declaration of function 'esNumerico' [-Wimplicit-function-declaration]
+     while(esNumerico(auxiliarOpcion)==0)
+           ^~~~~~~~~~
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:292:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file trabajoPracticoN°2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+02:31:36 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+ArrayEmployees.o: In function `orderEmployees':
+C:\Escritorio\UTN\Repositorios\entregaTps_Guillen\trabajoPracticoN°2\Debug/../ArrayEmployees.c:169: undefined reference to `esNumerico'
+collect2.exe: error: ld returned 1 exit status
+02:31:39 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+ArrayEmployees.o: In function `orderEmployees':
+C:\Escritorio\UTN\Repositorios\entregaTps_Guillen\trabajoPracticoN°2\Debug/../ArrayEmployees.c:169: undefined reference to `esNumerico'
+collect2.exe: error: ld returned 1 exit status
+02:32:39 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:292:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+Info: Nothing to build for trabajoPracticoN°2
+02:40:38 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:41:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file trabajoPracticoN°2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+02:40:46 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+02:43:27 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:41:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+..\Main.c:102:6: error: too many arguments to function 'orderEmployees'
+      orderEmployees(Empleado,TAM_EMPLEADOS,orden);
+      ^~~~~~~~~~~~~~
+In file included from ..\Main.c:12:0:
+..\ArrayEmployees.h:27:5: note: declared here
+ int orderEmployees(Employee list[], int len);
+     ^~~~~~~~~~~~~~
+02:46:13 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:41:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+..\Main.c:98:6: error: too few arguments to function 'orderEmployees'
+      orderEmployees(Empleado,TAM_EMPLEADOS);
+      ^~~~~~~~~~~~~~
+In file included from ..\Main.c:12:0:
+..\ArrayEmployees.h:27:5: note: declared here
+ int orderEmployees(Employee list[], int len,int order);
+     ^~~~~~~~~~~~~~
+..\Main.c:21:6: warning: unused variable 'orden' [-Wunused-variable]
+  int orden;
+      ^~~~~
+02:46:18 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:41:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+..\Main.c:98:6: error: too few arguments to function 'orderEmployees'
+      orderEmployees(Empleado,TAM_EMPLEADOS);
+      ^~~~~~~~~~~~~~
+In file included from ..\Main.c:12:0:
+..\ArrayEmployees.h:27:5: note: declared here
+ int orderEmployees(Employee list[], int len,int order);
+     ^~~~~~~~~~~~~~
+..\Main.c:21:6: warning: unused variable 'orden' [-Wunused-variable]
+  int orden;
+      ^~~~~
+02:46:18 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:41:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+..\Main.c:98:6: error: too few arguments to function 'orderEmployees'
+      orderEmployees(Empleado,TAM_EMPLEADOS);
+      ^~~~~~~~~~~~~~
+In file included from ..\Main.c:12:0:
+..\ArrayEmployees.h:27:5: note: declared here
+ int orderEmployees(Employee list[], int len,int order);
+     ^~~~~~~~~~~~~~
+..\Main.c:21:6: warning: unused variable 'orden' [-Wunused-variable]
+  int orden;
+      ^~~~~
+02:46:34 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:41:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+..\Main.c:21:6: warning: unused variable 'orden' [-Wunused-variable]
+  int orden;
+      ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:292:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+02:46:45 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:40:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+Info: Nothing to build for trabajoPracticoN°2
+02:49:05 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:292:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+Info: Nothing to build for trabajoPracticoN°2
+02:52:16 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:32:7: warning: implicit declaration of function 'get_intRange' [-Wimplicit-function-declaration]
+   opc=get_intRange("\n> INGRESE OPCION:\n","ERROR.REINGRESE OPCION:\n",0,4);
+       ^~~~~~~~~~~~
+..\Main.c:39:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+Main.o: In function `main':
+C:\Escritorio\UTN\Repositorios\entregaTps_Guillen\trabajoPracticoN°2\Debug/../Main.c:32: undefined reference to `get_intRange'
+collect2.exe: error: ld returned 1 exit status
+02:52:31 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:39:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+Info: Nothing to build for trabajoPracticoN°2
+02:54:44 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:292:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file trabajoPracticoN°2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+02:54:45 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+03:03:07 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:292:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file trabajoPracticoN°2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+03:03:13 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+03:23:18 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:292:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+..\ArrayEmployees.c: In function 'salaryListEmployees':
+..\ArrayEmployees.c:447:21: error: incompatible type for argument 1 of 'printEmployees'
+      printEmployees(list[i]);
+                     ^~~~
+..\ArrayEmployees.c:253:5: note: expected 'Employee * {aka struct <anonymous> *}' but argument is of type 'Employee {aka struct <anonymous>}'
+ int printEmployees(Employee* list, int length)
+     ^~~~~~~~~~~~~~
+..\ArrayEmployees.c:447:6: error: too few arguments to function 'printEmployees'
+      printEmployees(list[i]);
+      ^~~~~~~~~~~~~~
+..\ArrayEmployees.c:253:5: note: declared here
+ int printEmployees(Employee* list, int length)
+     ^~~~~~~~~~~~~~
+03:23:30 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:40:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+..\Main.c:13:23: error: expected ')' before numeric constant
+ #define TAM_EMPLEADOS 1000
+                       ^
+..\Main.c:102:39: note: in expansion of macro 'TAM_EMPLEADOS'
+      int salaryListEmployees(Empleado,TAM_EMPLEADOS,auxFloat);
+                                       ^~~~~~~~~~~~~
+03:23:34 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:40:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+..\Main.c:13:23: error: expected ')' before numeric constant
+ #define TAM_EMPLEADOS 1000
+                       ^
+..\Main.c:102:39: note: in expansion of macro 'TAM_EMPLEADOS'
+      int salaryListEmployees(Empleado,TAM_EMPLEADOS,auxFloat);
+                                       ^~~~~~~~~~~~~
+03:23:44 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:292:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+..\ArrayEmployees.c: In function 'salaryListEmployees':
+..\ArrayEmployees.c:447:21: error: incompatible type for argument 1 of 'printEmployees'
+      printEmployees(list[i]);
+                     ^~~~
+..\ArrayEmployees.c:253:5: note: expected 'Employee * {aka struct <anonymous> *}' but argument is of type 'Employee {aka struct <anonymous>}'
+ int printEmployees(Employee* list, int length)
+     ^~~~~~~~~~~~~~
+..\ArrayEmployees.c:447:6: error: too few arguments to function 'printEmployees'
+      printEmployees(list[i]);
+      ^~~~~~~~~~~~~~
+..\ArrayEmployees.c:253:5: note: declared here
+ int printEmployees(Employee* list, int length)
+     ^~~~~~~~~~~~~~
+03:23:46 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:40:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:292:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+..\ArrayEmployees.c: In function 'salaryListEmployees':
+..\ArrayEmployees.c:447:21: error: incompatible type for argument 1 of 'printEmployees'
+      printEmployees(list[i]);
+                     ^~~~
+..\ArrayEmployees.c:253:5: note: expected 'Employee * {aka struct <anonymous> *}' but argument is of type 'Employee {aka struct <anonymous>}'
+ int printEmployees(Employee* list, int length)
+     ^~~~~~~~~~~~~~
+..\ArrayEmployees.c:447:6: error: too few arguments to function 'printEmployees'
+      printEmployees(list[i]);
+      ^~~~~~~~~~~~~~
+..\ArrayEmployees.c:253:5: note: declared here
+ int printEmployees(Employee* list, int length)
+     ^~~~~~~~~~~~~~
+03:25:33 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:292:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+..\ArrayEmployees.c: In function 'salaryListEmployees':
+..\ArrayEmployees.c:447:21: error: incompatible type for argument 1 of 'printEmployees'
+      printEmployees(list[i],len);
+                     ^~~~
+..\ArrayEmployees.c:253:5: note: expected 'Employee * {aka struct <anonymous> *}' but argument is of type 'Employee {aka struct <anonymous>}'
+ int printEmployees(Employee* list, int length)
+     ^~~~~~~~~~~~~~
+03:25:34 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:292:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+..\ArrayEmployees.c: In function 'salaryListEmployees':
+..\ArrayEmployees.c:447:21: error: incompatible type for argument 1 of 'printEmployees'
+      printEmployees(list[i],len);
+                     ^~~~
+..\ArrayEmployees.c:253:5: note: expected 'Employee * {aka struct <anonymous> *}' but argument is of type 'Employee {aka struct <anonymous>}'
+ int printEmployees(Employee* list, int length)
+     ^~~~~~~~~~~~~~
+03:25:35 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:292:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+..\ArrayEmployees.c: In function 'salaryListEmployees':
+..\ArrayEmployees.c:447:21: error: incompatible type for argument 1 of 'printEmployees'
+      printEmployees(list[i],len);
+                     ^~~~
+..\ArrayEmployees.c:253:5: note: expected 'Employee * {aka struct <anonymous> *}' but argument is of type 'Employee {aka struct <anonymous>}'
+ int printEmployees(Employee* list, int length)
+     ^~~~~~~~~~~~~~
+03:26:41 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+..\ArrayEmployees.c: In function 'upEmployee':
+..\ArrayEmployees.c:292:14: warning: implicit declaration of function 'getFreeIndexEmployee' [-Wimplicit-function-declaration]
+  int index = getFreeIndexEmployee(list,len);
+              ^~~~~~~~~~~~~~~~~~~~
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+03:28:05 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+..\Main.c: In function 'main':
+..\Main.c:40:7: warning: implicit declaration of function 'upEmployee' [-Wimplicit-function-declaration]
+    if(upEmployee(Empleado,TAM_EMPLEADOS,&idAutomatico))
+       ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+03:28:45 **** Incremental Build of configuration Debug for project trabajoPracticoN°2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Main.o "..\\Main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o ArrayEmployees.o "..\\ArrayEmployees.c" 
+gcc -o trabajoPracticoN°2.exe ArrayEmployees.o Biblioteca.o Main.o 
+Info: Nothing to build for trabajoPracticoN°2
