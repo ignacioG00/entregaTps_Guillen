@@ -6,7 +6,7 @@
  */
 #include "ArrayEmployees.h"
 
-#include "UTN.h"
+#include "Biblioteca.h"
 
 /*
  * \brief To indicate that all position in the array are empty,
@@ -152,7 +152,13 @@ int sortEmployees(Employee list[],int len, int order)
 	return retorno;
 }
 
-int orderEmployees(Employee list[], int len)
+/*
+ *  \brief Ordena los empleados por salario o por apellido-
+ * \param list Employee*
+ * \param len int
+ * \return int Return (0) if Error [Invalid length or NULL pointer] - (1) if Ok
+ */
+int orderEmployeesBySalaryOrLastName(Employee list[], int len)
 {
 	Employee auxiliarEmpleado;
 
@@ -267,7 +273,7 @@ int printEmployees(Employee* list, int length)
 	if (list != NULL && length > 0) {
 		for (i = 0; i < length; i++) {
 			if (list[i].isEmpty == 1) {
-				printf("%5d %15s %15s %15f %15d \n\n",list[i].id, list[i].name, list[i].lastName, list[i].salary, list[i].sector);
+				printf("%5d %15s %15s %15f %10d \n\n",list[i].id, list[i].name, list[i].lastName, list[i].salary, list[i].sector);
 				cantidad++;
 			}
 		}
@@ -297,7 +303,7 @@ int upEmployee(Employee* list, int len,int* pId)
 	{
 		get_OnlyAlphabetStringWithSpaces("> INGRESE EL NOMBRE: \n","> ERROR.REINGRESE EL NOMBRE:\n",auxEmpleado.name,51);
 		get_OnlyAlphabetStringWithSpaces("> INGRESE EL APELLIDO: \n","> ERROR.REINGRESE EL APELLIDO:\n",auxEmpleado.lastName,51);
-		auxEmpleado.salary=get_FloatRange("> INGRESE EL SALARIO\n","> ERROR.REINGRESE EL SALARIO:\n",21600,38000,2);
+		get_FloatRange(&auxEmpleado.salary,"> INGRESE EL SALARIO\n","> ERROR.REINGRESE EL SALARIO:\n",21600,250000,2);
 		auxEmpleado.sector=get_Int("> INGRESE EL SECTOR:\n","> ERROR.REINGRESE EL SECTOR:\n");
 		if(validate_Exit_SN("> DESEA CONTINUAR? SI[S] NO[N]: ","> ERROR.REINGRESE"))
 			{
@@ -361,7 +367,7 @@ Employee modDataEmployee(Employee list)
 	break;
 
 		case 3:
-	auxiliar.salary=get_Float("> INGRESE EL CUIL:\n","> ERROR.REINGRESE NUMERO.\n");
+	get_FloatRange(&auxiliar.salary,"> INGRESE EL SALARIO\n","> ERROR.REINGRESE EL SALARIO:\n",21600,250000,2);
 	break;
 		case 4:
 	auxiliar.sector=get_Int("> INGRESE EL NRO DE SECTOR:\n","> ERROR. REINGRESE NRO DE SECTOR \n");
@@ -410,6 +416,17 @@ int modEmployee(Employee* list, int len)
 	return retorno;
 }
 
+/*
+ *
+ * \brief devuelve en promResult el salario promedio de los empleados.
+ * \param list Employee*
+ * \param int len
+ * \param float* promResult
+ * \return int Return (-1) si no modifico nada o dio error,
+ * (0) if Ok
+ *
+ */
+
 int promSalaryEmployee(Employee* list, int len,float* promResult)
 {
 	int retorno = -1;
@@ -433,8 +450,18 @@ int promSalaryEmployee(Employee* list, int len,float* promResult)
 	}
 	return retorno;
 }
+/*
+ *
+ * \brief imprime la cantidad de empleados que supera el salario promedio.
+ * \param list Employee*
+ * \param int len
+ * \param float* salary
+ * \return int Return (-1) si no modifico nada o dio error,
+ * (0) if Ok
+ *
+ */
 
-int salaryListEmployees(Employee* list, int len, float salary)
+int printHigherSalaryEmployees(Employee* list, int len, float salary)
 {
 	int retorno=-1;
 	int i;
@@ -449,6 +476,7 @@ int salaryListEmployees(Employee* list, int len, float salary)
 				if(list[i].salary>salary)
 				{
 					contSuperaSalario ++;
+					retorno=0;
 				}
 			}
 		}

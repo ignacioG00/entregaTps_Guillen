@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "ArrayEmployees.h"
-#include "UTN.h"
+#include "Biblioteca.h"
 #define TAM_EMPLEADOS 5
 
 int main(void) {
@@ -98,12 +98,12 @@ int main(void) {
 				switch(opcSubMenu)
 				{
 				case 1:
-					orderEmployees(Empleado,TAM_EMPLEADOS);
+					orderEmployeesBySalaryOrLastName(Empleado,TAM_EMPLEADOS);
 					printEmployees(Empleado,TAM_EMPLEADOS);
 					break;
 				case 2:
 					promSalaryEmployee(Empleado,TAM_EMPLEADOS,&auxFloat);
-					salaryListEmployees(Empleado,TAM_EMPLEADOS,auxFloat);
+					printHigherSalaryEmployees(Empleado,TAM_EMPLEADOS,auxFloat);
 					break;
 				}
 				system("pause");

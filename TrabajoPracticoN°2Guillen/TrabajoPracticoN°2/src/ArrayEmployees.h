@@ -12,7 +12,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include "UTN.h"
+
+#include "Biblioteca.h"
 
 //***ESTRUCTURAS
 struct
@@ -25,7 +26,7 @@ struct
  int isEmpty;
 }typedef Employee;
 
-int orderEmployees(Employee list[], int len);
+int orderEmployeesBySalaryOrLastName(Employee list[], int len);
 int initEmployees(Employee* list, int len);
 int addEmployee(Employee* list, int len, int id, char name[],char lastName[],float salary,int sector);
 int findEmployeeById(Employee* list, int len,int id);
@@ -33,7 +34,7 @@ int sortEmployees(Employee list[],int len, int order);
 int removeEmployee(Employee* list, int len, int id);
 int printEmployees(Employee* list, int length);
 int modEmployee(Employee* list, int len);
-int salaryListEmployees(Employee* list, int len, float salary);
+int printHigherSalaryEmployees(Employee* list, int len, float salary);
 int promSalaryEmployee(Employee* list, int len ,float* pPromedioResultado );
 int getFreeIndexEmployee(Employee* list, int len);
 int upEmployee(Employee* list, int len,int* pId);
