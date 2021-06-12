@@ -10,4 +10,9 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee);
 int controller_saveAsText(char* path , LinkedList* pArrayListEmployee);
 int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee);
 
+void controller_chooseLoadText(int flagChoose,LinkedList* list);
+void controller_chooseLoadBin(int flagChoose,LinkedList* list);
 
+int controller_deleteLinkedList(LinkedList* pArrayListEmployee);
+
+int controller_getMaxId(LinkedList* pArrayListEmployee);

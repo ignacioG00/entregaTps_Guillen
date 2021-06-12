@@ -20,6 +20,7 @@ int validate_OnlyNumberInt(char* pData);
 int validate_OnlyAlphabet(char *pData);
 int validate_OnlyAlphabetWithSpaces(char *pData);
 int validate_Exit_SN(char *msj,char *msjError);
+int esArchivo(char* cadena);
 
 //GET
 float get_FloatRange(float* pResult,char *msj,char *msjError,float minimo, float maximo,int reintentos);
@@ -40,7 +41,8 @@ int utn_getNumeroFlotante(float* pResultado, char* mensaje, char* mensajeError, 
 int utn_getNombre(char* pResultado,char* mensaje, char* mensajeError, int reintentos, int longitud);
 int utn_getDescripcion(char* pResultado, int longitud,char* mensaje, char* mensajeError, int reintentos);
 int utn_getDni(char* pResultado, int longitud,char* mensaje, char* mensajeError, int reintentos);
+int utn_getArchivo(char* pResultado, char* mensaje, char* mensajeError, int reintentos, int longitud);
 
-void menu(void);
+int subMenu(int* auxOpcion);
 
 #endif /* UTN_H_ */

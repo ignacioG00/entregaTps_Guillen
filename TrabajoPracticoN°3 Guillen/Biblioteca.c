@@ -261,6 +261,18 @@ char get_Char(char *msj, char *msjError)
 }
 
 //UTILITIES
+
+
+int esNumerica(char* cadena, int limite);
+static int getInt(int* pResultado);
+static int esFlotante(char* cadena);
+static int getFloat(float* pResultado);
+static int getString(char* cadena, int longitud);
+static int esNombre(char* cadena,int longitud);
+static int getNombre(char* pResultado,int longitud);
+static int esDescripcion(char* cadena,int longitud);
+static int getDescripcion(char* pResultado, int longitud);
+
 /****************************************************
     Menu:
      1. Cargar los datos de los empleados desde el archivo data.csv (modo texto).
@@ -273,34 +285,44 @@ char get_Char(char *msj, char *msjError)
      8. Guardar los datos de los empleados en el archivo data.csv (modo texto).
      9. Guardar los datos de los empleados en el archivo data.csv (modo binario).
     10. Salir
+
 *****************************************************/
 
-void menu(void)
+int subMenu(int* auxOpcion)
 {
-	puts("****************************************************");
-	puts("\tMENU:\n");
-	puts(" 1. Cargar los datos de los empleados desde el archivo data.csv (modo texto).");
-	puts(" 2. Cargar los datos de los empleados desde el archivo data.csv (modo binario).");
-	puts(" 3. Alta de empleados.");
-	puts(" 5. Baja de empleado");
-	puts(" 6. Listar empleados");
-	puts(" 7. Ordenar empleados");
-	puts(" 8. Guardar los datos de los empleados en el archivo data.csv (modo texto).");
-	puts(" 9. Guardar los datos de los empleados en el archivo data.csv (modo binario).");
-	puts(" 10. Salir");
-	puts("****************************************************");
+	int retorno = 0;
+	if(utn_getNumero(auxOpcion,"/****************************************************\n"
+			"Menu:\n"
+			" 1. Cargar los datos de los empleados desde el archivo data.csv (modo texto).\n"
+			" 2. Cargar los datos de los empleados desde el archivo data.csv (modo binario).\n"
+			" 3. Alta de empleado\n"
+			" 4. Modificar datos de empleado\n"
+			" 5. Baja de empleado\n"
+			" 6. Listar empleados\n"
+			" 7. Ordenar empleados\n"
+			" 8. Guardar los datos de los empleados en el archivo data.csv (modo texto).\n"
+			" 9. Guardar los datos de los empleados en el archivo data.csv (modo binario).\n"
+			" 10. Salir\n"
+			"*****************************************************/\n",
+			"Error,Reingrese\n"
+			"/****************************************************\n"
+			"Menu:\n"
+			" 1. Cargar los datos de los empleados desde el archivo data.csv (modo texto).\n"
+			" 2. Cargar los datos de los empleados desde el archivo data.csv (modo binario).\n"
+			" 3. Alta de empleado\n"
+			" 4. Modificar datos de empleado\n"
+			" 5. Baja de empleado\n"
+			" 6. Listar empleados\n"
+			" 7. Ordenar empleados\n"
+			" 8. Guardar los datos de los empleados en el archivo data.csv (modo texto).\n"
+			" 9. Guardar los datos de los empleados en el archivo data.csv (modo binario).\n"
+			" 10. Salir\n"
+			"*****************************************************/\n",0, 11, 2)==0)
+	{
+		retorno = 1;
+	}
+	return retorno;
 }
-
-int esNumerica(char* cadena, int limite);
-static int getInt(int* pResultado);
-static int esFlotante(char* cadena);
-static int getFloat(float* pResultado);
-static int getString(char* cadena, int longitud);
-static int esNombre(char* cadena,int longitud);
-static int getNombre(char* pResultado,int longitud);
-static int esDescripcion(char* cadena,int longitud);
-static int getDescripcion(char* pResultado, int longitud);
-
 
 /**
  * \brief 	Lee de stdin hasta que encuentra un '\n' o hasta que haya copiado en cadena
@@ -724,5 +746,60 @@ int utn_getDni(char* pResultado, int longitud,char* mensaje, char* mensajeError,
 	return retorno;
 }
 
+int esArchivo(char* cadena)
+{
+    int retorno=1;
+    int i;
+    char buffer[1000];
+    int contadorPunto=0;
+    strcpy(buffer,cadena);
+    for(i=0;buffer[i]!='\0';i++)
+    {
+        if((isalpha(buffer[i])!=0) || (buffer[i]=='.') || (isdigit(buffer[i])!=0))
+        {
+            continue;
+        }
+        else
+        {
+        	retorno=0;
+        	break;
+        }
+        if(buffer[i]=='.')
+		{
+			contadorPunto++;
+		}
+    }
+	if(contadorPunto==1)
+	{
+		retorno=1;
+	}
+    return retorno;
+}
+
+int utn_getArchivo(char* pResultado, char* mensaje, char* mensajeError, int reintentos, int longitud)
+{
+	    int retorno=0;
+	    char bufferStr[longitud];
+	    if(mensaje!=NULL && mensajeError!=NULL && reintentos>=0 && pResultado!=NULL)
+	    {
+	        do
+	        {
+	        	printf("%s",mensaje);
+	            if((esArchivo(bufferStr)))
+				{
+	                strncpy(pResultado,bufferStr,longitud);
+	                retorno=1;
+	                break;
+	            }
+	            else
+	            {
+	                printf("%s",mensajeError);
+	                reintentos--;
+	            }
+	        }
+	        while(reintentos>=0);
+	    }
+	    return retorno;
+}
 
 #endif
