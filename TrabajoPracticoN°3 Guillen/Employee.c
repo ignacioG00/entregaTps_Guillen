@@ -19,10 +19,10 @@ Employee* employee_newParametros(char* idStr,char* nombreStr,char* horasTrabajad
 
 	if(this != NULL && nombreStr != NULL && horasTrabajadasStr != NULL && idStr != NULL && sueldo !=NULL)
 	{
-		if((employee_setId(this,atoi(idStr))!=0) ||
-			(employee_setNombre(this,nombreStr)!=0) ||
-			(employee_setHorasTrabajadas(this,atoi(horasTrabajadasStr))!=0) ||
-			(employee_setSueldo(this,atoi(sueldo))!=0))
+		if((employee_setId(this,atoi(idStr))==0) ||
+			(employee_setNombre(this,nombreStr)==0) ||
+			(employee_setHorasTrabajadas(this,atoi(horasTrabajadasStr))==0) ||
+			(employee_setSueldo(this,atoi(sueldo))==0))
 		{
 			free(this);
 			this = NULL;
@@ -214,8 +214,8 @@ int employee_sortId(void* thisOne, void* thisTwo)
 	int auxIdOne;
 	int auxIdTwo;
 
-	if(thisOne!=NULL && thisTwo!=NULL && employee_getId((Employee*)thisOne, &auxIdOne)==0
-			&& employee_getId((Employee*)thisTwo, &auxIdTwo)==0)
+	if(thisOne!=NULL && thisTwo!=NULL && employee_getId((Employee*)thisOne, &auxIdOne)
+			&& employee_getId((Employee*)thisTwo, &auxIdTwo))
 	{
 			if(auxIdOne < auxIdTwo)
 			{
@@ -238,8 +238,8 @@ void employee_print(Employee* this)
 	int auxSueldo;
 	char auxNombre[128];
 
-		if(employee_getId(this, &auxId)==0 && employee_getNombre(this, auxNombre)==0 &&
-		   employee_getHorasTrabajadas(this, &auxHoras)==0 && employee_getSueldo(this, &auxSueldo)==0)
+		if(employee_getId(this, &auxId) && employee_getNombre(this, auxNombre) &&
+		   employee_getHorasTrabajadas(this, &auxHoras) && employee_getSueldo(this, &auxSueldo))
 		{
 			printf("|ID|> %d - |NOMBRE|> %s - |HORAS TRABAJADAS|> %d - |SUELDO|> %d\n",auxId, auxNombre,auxHoras,auxSueldo);
 		}

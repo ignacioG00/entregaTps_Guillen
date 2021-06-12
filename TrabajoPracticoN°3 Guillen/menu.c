@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include "Controller.h"
 #include "Biblioteca.h"
+#include "menu.h"
 
 int menu(void){
 
@@ -100,9 +101,11 @@ int menu(void){
 				{
 				case 1:
 					controller_saveAsText("data.csv",listaEmpleados);
+					secFlag=0;
 					break;
 				case 2:
 					controller_saveAsText("Chequeo.csv",listaEmpleados);
+					secFlag=0;
 					break;
 				case 3:
 					if((utn_getArchivo(path, "Ingrese nombre de archivo","Error, no es valido caracter especial, no olvide el .csv o .txt", 2, 30))==0)
@@ -122,14 +125,17 @@ int menu(void){
 				{
 				case 1:
 					controller_saveAsBinary("data.bin",listaEmpleados);
+					firstFlag=0;
 					break;
 				case 2:
 					controller_saveAsBinary("Chequeo.bin",listaEmpleados);
+					firstFlag=0;
 					break;
 				case 3:
 					if((utn_getArchivo(path, "Ingrese nombre de archivo","Error, no es valido caracter especial, no olvide el .bin", 2, 30))==0)
 					{
 						controller_saveAsBinary(path,listaEmpleados);
+						firstFlag=0;
 					}
 					else
 					{
@@ -138,21 +144,9 @@ int menu(void){
 					break;
 				}
 				break;
-			case 10:
-				if(ll_isEmpty(listaEmpleados)==0 && secFlag==0)
-				{
-					if(validate_Exit_SN("Se encuentra una lista con datos en ejecucion, desea salir sin guardar?","Error.Reingrese"))
-					{
-						controller_deleteLinkedList(listaEmpleados);
-					}
-				}
-				else
-				{
-					controller_deleteLinkedList(listaEmpleados);
-				}
-				break;
 	        	}
 	    	}
 	    }while(option != 10);
+	    puts("\n PROYECTO FINALIZADO! MUCHAS GRACIAS POR UTILIZARLO!");
 	    return 0;
 }

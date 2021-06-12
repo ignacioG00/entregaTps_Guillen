@@ -28,7 +28,7 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
 					if(retornoLeido<4)
 					{
 						employee_delete(pAuxEmpleado);
-						retorno=0;
+						retorno=-1;
 						break;
 					}
 					else
@@ -37,7 +37,7 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
 						if(pAuxEmpleado!=NULL)
 						{
 							ll_add(pArrayListEmployee,pAuxEmpleado);
-							retorno=1;
+							retorno=0;
 						}
 					}
 				}while(!feof(pFile));
@@ -61,26 +61,25 @@ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
 
 		if(pFile!=NULL && pArrayListEmployee!=NULL)
 		{
-			do
+		do{
+			pAuxEmpleado=employee_new();
+			if(pAuxEmpleado!=NULL)
 			{
-				pAuxEmpleado=employee_new();
-				if(pAuxEmpleado!=NULL)
+				retornoLeido = fread(pAuxEmpleado,sizeof(Employee),1,pFile);
+				if(retornoLeido!=1)
 				{
-					retornoLeido = fread(pAuxEmpleado,sizeof(Employee),1,pFile);
-					if(retornoLeido!=1)
-					{
-						employee_delete(pAuxEmpleado);
-						break;
-					}
-					else
-					{
-						ll_add(pArrayListEmployee,pAuxEmpleado);
-						retorno=0;
-					}
+					employee_delete(pAuxEmpleado);
+					break;
 				}
-			}while(!feof(pFile));
-		}
-		return retorno;
+				else
+				{
+					ll_add(pArrayListEmployee,pAuxEmpleado);
+					retorno=0;
+				}
+			}
+		}while(!feof(pFile));
+	}
+	return retorno;
 }
 
 int parser_EmployeeToBinary(FILE* pFile , LinkedList* pArrayListEmployee)

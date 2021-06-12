@@ -17,17 +17,17 @@
 int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
 {
 	int retorno=0;
-		if(path!=NULL && pArrayListEmployee!=NULL && ll_isEmpty(pArrayListEmployee))
+		if(path!=NULL && pArrayListEmployee!=NULL && ll_isEmpty(pArrayListEmployee)==1)
 		{
 			retorno=1;
 			FILE *pFile=fopen(path,"r");
-			if(parser_EmployeeFromText(pFile,pArrayListEmployee)==0)
+			if(parser_EmployeeFromText(pFile,pArrayListEmployee)!=0)
 			{
-				printf("Archivo leido y cerrado correctamente\n");
+				printf("No se pudo leer el archivo\n");
 			}
 			else
 			{
-				printf("No se pudo leer el archivo\n");
+				printf("Archivo leido y cerrado correctamente\n");
 			}
 			fclose(pFile);
 		}else{
@@ -59,17 +59,17 @@ int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
 int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee)
 {
 	int retorno=0;
-		if(path!=NULL && pArrayListEmployee!=NULL)
+		if(path!=NULL && pArrayListEmployee!=NULL && ll_isEmpty(pArrayListEmployee)==1)
 		{
+			retorno=1;
 			FILE *pFile=fopen(path,"rb");
 			if(parser_EmployeeFromBinary(pFile,pArrayListEmployee)!=0)
 			{
-				printf("Archivo bien leido. Cerrado correctamente\n");
+				printf("No se pudo leer el archivo\n");
 			}
 			else
 			{
-				printf("No se pudo leer el archivo\n");
-				retorno=1;
+				printf("Archivo bien leido. Cerrado correctamente\n");
 				fclose(pFile);
 			}
 		}else{
@@ -350,7 +350,7 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_ListEmployee(LinkedList* pArrayListEmployee)
 {
-	int retorno = -1;
+	int retorno = 1;
 		Employee* pAuxEmpleado=NULL;
 		int auxId;
 		int auxHoras;
@@ -361,23 +361,23 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
 		if(pArrayListEmployee != NULL && ll_isEmpty(pArrayListEmployee)==0)
 		{
 			cantLinkedList=ll_len(pArrayListEmployee);
-			printf("| ID	|	NOMBRE	|	HORAS	|	TRABAJADAS	|	SUELDO	|\n");
+			printf("| ID   |	NOMBRE	|	HORAS TRABAJADAS	|    SUELDO	|\n");
 			for(int i=0; i<cantLinkedList ; i++)
 			{
 				pAuxEmpleado = (Employee*)ll_get(pArrayListEmployee, i);
-				if(employee_getId(pAuxEmpleado, &auxId)!=0 ||
-				   employee_getNombre(pAuxEmpleado, auxNombre)!=0 ||
-				   employee_getHorasTrabajadas(pAuxEmpleado, &auxHoras)!=0 ||
-				   employee_getSueldo(pAuxEmpleado, &auxSueldo)!=0)
+				if(employee_getId(pAuxEmpleado, &auxId)==0 ||
+				   employee_getNombre(pAuxEmpleado, auxNombre)==0 ||
+				   employee_getHorasTrabajadas(pAuxEmpleado, &auxHoras)==0 ||
+				   employee_getSueldo(pAuxEmpleado, &auxSueldo)==0)
 				{
-					retorno=0;
+					retorno=-1;
 					printf("Error, al imprimir lista");
 					break;
 				}else{
-					printf("%5d %-15s %4d %-10d\n",auxId, auxNombre, auxHoras, auxSueldo);
+					printf("|%5d |%15s |%15d		|%10d	|\n",auxId, auxNombre, auxHoras, auxSueldo);
 				}
 			}
-			retorno = 1;
+			retorno = 0;
 		}else{
 			printf("No hay lista para imprimir\n");
 		}
@@ -400,23 +400,24 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
 		if(pArrayListEmployee!=NULL)
 		{
 			utn_getNumero(&option, "\t|***ORDENAMIENTO***|"
-					"\n1. Nombre "
-					"\n2. Horas Trabajadas "
-					"\n3. Sueldo",
+					"\n1. Id"
+					"\n2. Nombre "
+					"\n3. Horas Trabajadas "
+					"\n4. Sueldo",
 					"Error, opcion incorrecta\n", 1, 3, 2);
 			switch(option)
 			{
 				case 1:
-					pCritOrden=employee_sortNombre;
+					pCritOrden=employee_sortId;
 					break;
 				case 2:
-					pCritOrden=employee_sortHoras;
+					pCritOrden=employee_sortNombre;
 					break;
 				case 3:
-					pCritOrden=employee_sortSueldo;
+					pCritOrden=employee_sortHoras;
 					break;
 				case 4:
-					pCritOrden=employee_sortId;
+					pCritOrden=employee_sortSueldo;
 					break;
 			}
 			utn_getNumero(&option, "\t|***CRITERIO***|\n"
@@ -553,20 +554,4 @@ void controller_chooseLoadBin(int flagChoose,LinkedList* list)
 			controller_loadFromBinary("Chequeo.bin",list);
 			break;
 		}
-}
-
-int controller_deleteLinkedList(LinkedList* pArrayListEmployee)
-{
-	int retorno=-1;
-	if(pArrayListEmployee!=NULL)
-	{
-		if(ll_deleteLinkedList(pArrayListEmployee)==0)
-		{
-			printf("/ PROGRAMA FINALIZADO, HASTA PRONTO /");
-			retorno=0;
-
-		}
-	}
-	return retorno;
-
 }
