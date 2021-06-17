@@ -1,3 +1,10 @@
+/*
+ * 	UTN.c
+ *	TRABAJO PRACTICO N°3
+ *  DNI:42.432.724
+ *  AUTHOR:IGNACIO GUILLEN
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "LinkedList.h"
@@ -5,13 +12,15 @@
 #include "Biblioteca.h"
 #include "parser.h"
 
-/** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo texto).
+/**
  *
+ * \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo texto).
  * \param path char*
  * \param pArrayListEmployee LinkedList*
- * \return int
+ * \return int -1 error, 0 si esta ok
  *
  */
+
 int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
 {
 	int retorno = 0;
@@ -46,13 +55,15 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
 	    return retorno;
 }
 
-/** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo binario).
+/**
  *
+ * \brief Parsea los datos de los empleados desde el archivo data.csv (modo binario).
  * \param path char*
  * \param pArrayListEmployee LinkedList*
- * \return int
+ * \return int -1 error, 0 si esta ok
  *
  */
+
 int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
 {
 	int retorno = -1;
@@ -82,6 +93,15 @@ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
 	return retorno;
 }
 
+/**
+ *
+ * \brief pasa los datos del archivo a modo binario.
+ * \param path char*
+ * \param pArrayListEmployee LinkedList*
+ * \return int -1 error, 0 si esta ok, 1 borra el empleado existente
+ *
+ */
+
 int parser_EmployeeToBinary(FILE* pFile , LinkedList* pArrayListEmployee)
 {
 	int retorno = -1;
@@ -110,6 +130,14 @@ int parser_EmployeeToBinary(FILE* pFile , LinkedList* pArrayListEmployee)
 	return retorno;
 }
 
+/**
+ *
+ * \brief pasa los datos del archivo a modo texto.
+ * \param path char*
+ * \param pArrayListEmployee LinkedList*
+ * \return int 0 error, 1 si esta ok
+ *
+ */
 int parser_EmployeeToText(FILE* pFile , LinkedList* pArrayListEmployee)
 {
 	int retorno=0;
@@ -131,10 +159,8 @@ int parser_EmployeeToText(FILE* pFile , LinkedList* pArrayListEmployee)
 			   employee_getHorasTrabajadas(pAuxEmpleado, &auxHoras)==0 &&
 			   employee_getSueldo(pAuxEmpleado, &auxSueldo)==0)
 			{
-				//fprintf(pFile,"%d, %s, %d, %d\n",(*(pAuxEmpleado+i)).id, (*(pAuxEmpleado+i)).nombre, (*(pAuxEmpleado+i)).horasTrabajadas, (*(pAuxEmpleado+i)).sueldo);
 				fprintf(pFile,"%d, %s, %d, %d\n",auxId, auxNombre, auxHoras, auxSueldo);
 			}
-			//printf("%d %s %d %d\n",(*(pAuxEmpleado+i)).id, (*(pAuxEmpleado+i)).nombre, (*(pAuxEmpleado+i)).horasTrabajadas, (*(pAuxEmpleado+i)).sueldo);
 			retorno=1;
 		}
 

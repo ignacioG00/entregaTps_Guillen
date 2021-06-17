@@ -1,3 +1,10 @@
+/*
+ * 	UTN.c
+ *	TRABAJO PRACTICO N°3
+ *  DNI:42.432.724
+ *  AUTHOR:IGNACIO GUILLEN
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "Controller.h"
@@ -14,6 +21,7 @@
  * \return int
  *
  */
+
 int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
 {
 	int retorno=0;
@@ -404,26 +412,39 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
 					"\n2. Nombre "
 					"\n3. Horas Trabajadas "
 					"\n4. Sueldo",
-					"Error, opcion incorrecta\n", 1, 3, 2);
+					"Error, opcion incorrecta\n", 1, 4, 2);
 			switch(option)
 			{
 				case 1:
 					pCritOrden=employee_sortId;
+					utn_getNumero(&option, "\t|***CRITERIO***|\n"
+										"0. Descendente(1000-1)\n"
+										"1. Ascendente(1-1000) \n",
+										"Error, opcion incorrecta", 0, 1, 2);
 					break;
 				case 2:
 					pCritOrden=employee_sortNombre;
+					utn_getNumero(&option, "\t|***CRITERIO***|\n"
+										"0. Descendente(Z-A)\n"
+										"1. Ascendente(A-Z) \n",
+										"Error, opcion incorrecta", 0, 1, 2);
 					break;
 				case 3:
 					pCritOrden=employee_sortHoras;
+					utn_getNumero(&option, "\t|***CRITERIO***|\n"
+											"0. Descendente(Mayor a Menor)\n"
+											"1. Ascendente(Menor a Mayor) \n",
+											"Error, opcion incorrecta", 0, 1, 2);
 					break;
 				case 4:
 					pCritOrden=employee_sortSueldo;
+					utn_getNumero(&option, "\t|***CRITERIO***|\n"
+											"0. Descendente(Mayor a Menor)\n"
+											"1. Ascendente(Menor a Mayor) \n",
+											"Error, opcion incorrecta", 0, 1, 2);
 					break;
 			}
-			utn_getNumero(&option, "\t|***CRITERIO***|\n"
-					"0. Descendente(Z-A)\n"
-					"1. Ascendente(A-Z) \n",
-					"Error, opcion incorrecta", 0, 1, 2);
+
 			ll_sort(pArrayListEmployee, pCritOrden, option);
 			retorno=1;
 		}
@@ -525,8 +546,8 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee)
 void controller_chooseLoadText(int flagChoose,LinkedList* list)
 {
 	utn_getNumero(&flagChoose, "Elija opcion a abrir: \n"
-			"1. data.csv \n"
-			"2.Chequeo.csv\n",
+			"1. Data.csv \n"
+			"2. Chequeo.csv\n",
 			"Error, opcion incorrecta", 1, 2, 1);
 		switch(flagChoose)
 		{
@@ -542,8 +563,8 @@ void controller_chooseLoadText(int flagChoose,LinkedList* list)
 void controller_chooseLoadBin(int flagChoose,LinkedList* list)
 {
 	utn_getNumero(&flagChoose, "Elija opcion a abrir: \n"
-			"1. data.bin \n"
-			"2.Chequeo.bin \n",
+			"1. Data.bin \n"
+			"2. Chequeo.bin \n",
 			"Error, opcion incorrecta", 1, 2, 1);
 		switch(flagChoose)
 		{

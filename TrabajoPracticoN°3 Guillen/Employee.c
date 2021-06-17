@@ -1,3 +1,10 @@
+/*
+ * 	UTN.c
+ *	TRABAJO PRACTICO N°3
+ *  DNI:42.432.724
+ *  AUTHOR:IGNACIO GUILLEN
+ */
+
 #include "Employee.h"
 #include "Biblioteca.h"
 #include <stdio.h>
@@ -146,19 +153,17 @@ int employee_sortSueldo(void* thisOne, void* thisTwo)
 	int auxSueldoOne;
 	int auxSueldoTwo;
 
-	if(thisOne!=NULL && thisTwo!=NULL && employee_getSueldo((Employee*)thisOne, &auxSueldoOne)==0
-			&& employee_getSueldo((Employee*)thisTwo, &auxSueldoTwo)==0)
+	if(thisOne!=NULL && thisTwo!=NULL && employee_getSueldo((Employee*)thisOne, &auxSueldoOne)
+			&& employee_getSueldo((Employee*)thisTwo, &auxSueldoTwo))
 	{
 			if(auxSueldoOne < auxSueldoTwo)
 			{
 				retorno=1;
-			}else{
-				if(auxSueldoOne > auxSueldoTwo)
-				{
-					retorno=-1;
-				}
 			}
-
+			if(auxSueldoOne > auxSueldoTwo)
+			{
+				retorno=-1;
+			}
 	}
 	return retorno;
 }
@@ -169,19 +174,17 @@ int employee_sortHoras(void* thisOne, void* thisTwo)
 	int auxHorasOne;
 	int auxHorasTwo;
 
-	if(thisOne!=NULL && thisTwo!=NULL && employee_getHorasTrabajadas((Employee*)thisOne, &auxHorasOne)==0
-			&& employee_getHorasTrabajadas((Employee*)thisTwo, &auxHorasTwo)==0)
+	if(thisOne!=NULL && thisTwo!=NULL && employee_getHorasTrabajadas((Employee*)thisOne, &auxHorasOne)
+			&& employee_getHorasTrabajadas((Employee*)thisTwo, &auxHorasTwo))
 	{
 			if(auxHorasOne < auxHorasTwo)
 			{
 				retorno=1;
-			}else{
-				if(auxHorasOne > auxHorasTwo)
-				{
-					retorno=-1;
-				}
 			}
-
+			if(auxHorasOne > auxHorasTwo)
+			{
+					retorno=-1;
+			}
 	}
 	return retorno;
 }
@@ -192,17 +195,16 @@ int employee_sortNombre(void* thisOne, void* thisTwo)
 	char auxNameOne[128];
 	char auxNameTwo[128];
 
-	if(thisOne!=NULL && thisTwo!=NULL && employee_getNombre((Employee*)thisOne, auxNameOne)==0
-			&& employee_getNombre((Employee*)thisTwo, auxNameTwo)==0)
+	if(thisOne!=NULL && thisTwo!=NULL && employee_getNombre((Employee*)thisOne, auxNameOne)
+			&& employee_getNombre((Employee*)thisTwo, auxNameTwo))
 	{
 			if(strcmp(auxNameOne,auxNameTwo)>0)
 			{
 				retorno=1;
-			}else{
-				if(strcmp(auxNameOne,auxNameTwo)<0)
-				{
-					retorno=-1;
-				}
+			}
+			if(strcmp(auxNameOne,auxNameTwo)<0)
+			{
+				retorno=-1;
 			}
 	}
 	return retorno;
@@ -220,13 +222,11 @@ int employee_sortId(void* thisOne, void* thisTwo)
 			if(auxIdOne < auxIdTwo)
 			{
 				retorno=1;
-			}else{
-				if(auxIdOne > auxIdTwo)
-				{
-					retorno=-1;
-				}
 			}
-
+			if(auxIdOne > auxIdTwo)
+			{
+				retorno=-1;
+			}
 	}
 	return retorno;
 }
