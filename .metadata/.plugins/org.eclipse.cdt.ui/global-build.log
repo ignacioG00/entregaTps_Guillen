@@ -1,0 +1,226 @@
+Info: Nothing to build for likedList
+Info: Nothing to build for likedList
+Info: Nothing to build for likedList
+Info: Nothing to build for likedList
+12:09:11 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file likedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:09:14 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+12:10:07 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file likedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:10:10 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+12:30:41 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Employee.o" "..\\src\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_increaseSalary':
+..\src\Controller.c:589:19: warning: implicit declaration of function 'll_map' [-Wimplicit-function-declaration]
+   sueldoAumentado=ll_map(pArrayListEmployee,increaseSalary);
+                   ^~~~~~
+..\src\Controller.c:589:45: error: 'increaseSalary' undeclared (first use in this function)
+   sueldoAumentado=ll_map(pArrayListEmployee,increaseSalary);
+                                             ^~~~~~~~~~~~~~
+..\src\Controller.c:589:45: note: each undeclared identifier is reported only once for each function it appears in
+12:30:47 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_increaseSalary':
+..\src\Controller.c:589:19: warning: implicit declaration of function 'll_map' [-Wimplicit-function-declaration]
+   sueldoAumentado=ll_map(pArrayListEmployee,increaseSalary);
+                   ^~~~~~
+..\src\Controller.c:589:45: error: 'increaseSalary' undeclared (first use in this function)
+   sueldoAumentado=ll_map(pArrayListEmployee,increaseSalary);
+                                             ^~~~~~~~~~~~~~
+..\src\Controller.c:589:45: note: each undeclared identifier is reported only once for each function it appears in
+12:31:15 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_increaseSalary':
+..\src\Controller.c:589:19: warning: implicit declaration of function 'll_map' [-Wimplicit-function-declaration]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                   ^~~~~~
+..\src\Controller.c:589:18: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                  ^
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+12:32:52 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_increaseSalary':
+..\src\Controller.c:589:19: warning: implicit declaration of function 'll_map' [-Wimplicit-function-declaration]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                   ^~~~~~
+..\src\Controller.c:589:18: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                  ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Employee.o" "..\\src\\Employee.c" 
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+12:34:55 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_increaseSalary':
+..\src\Controller.c:589:19: warning: implicit declaration of function 'll_map' [-Wimplicit-function-declaration]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                   ^~~~~~
+..\src\Controller.c:589:18: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                  ^
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+Info: Nothing to build for likedList
+12:37:31 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_increaseSalary':
+..\src\Controller.c:589:19: warning: implicit declaration of function 'll_map' [-Wimplicit-function-declaration]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                   ^~~~~~
+..\src\Controller.c:589:18: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                  ^
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file likedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:37:39 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+Info: Nothing to build for likedList
+Info: Nothing to build for likedList
+Info: Nothing to build for likedList
+Info: Nothing to build for likedList
+12:44:05 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu.o" "..\\src\\menu.c" 
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file likedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:44:09 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+12:45:43 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_increaseSalary':
+..\src\Controller.c:589:19: warning: implicit declaration of function 'll_map' [-Wimplicit-function-declaration]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                   ^~~~~~
+..\src\Controller.c:589:18: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                  ^
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+Info: Nothing to build for likedList
+Info: Nothing to build for likedList
+Info: Nothing to build for likedList
+12:49:06 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_increaseSalary':
+..\src\Controller.c:589:19: warning: implicit declaration of function 'll_map' [-Wimplicit-function-declaration]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary(pArrayListEmployee));
+                   ^~~~~~
+..\src\Controller.c:589:3: error: invalid use of void expression
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary(pArrayListEmployee));
+   ^~~~~~~~~~~~~~~
+12:49:39 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_increaseSalary':
+..\src\Controller.c:589:19: warning: implicit declaration of function 'll_map' [-Wimplicit-function-declaration]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary());
+                   ^~~~~~
+..\src\Controller.c:589:45: error: too few arguments to function 'employee_increaseSalary'
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary());
+                                             ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:12:0:
+..\src\Employee.h:40:6: note: declared here
+ void employee_increaseSalary(void *empleadoRecibido);
+      ^~~~~~~~~~~~~~~~~~~~~~~
+12:49:44 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_increaseSalary':
+..\src\Controller.c:589:19: warning: implicit declaration of function 'll_map' [-Wimplicit-function-declaration]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                   ^~~~~~
+..\src\Controller.c:589:18: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                  ^
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file likedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:57:33 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\clearTest.o" "..\\testing\\src\\clearTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\lenTest.o" "..\\testing\\src\\lenTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\setTest.o" "..\\testing\\src\\setTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\addNodeTest.o" "..\\testing\\src\\addNodeTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\getTest.o" "..\\testing\\src\\getTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\indexOfTest.o" "..\\testing\\src\\indexOfTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\containsTest.o" "..\\testing\\src\\containsTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\addTest.o" "..\\testing\\src\\addTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\newTest.o" "..\\testing\\src\\newTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\getNodeTest.o" "..\\testing\\src\\getNodeTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\pushTest.o" "..\\testing\\src\\pushTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_increaseSalary':
+..\src\Controller.c:589:19: warning: implicit declaration of function 'll_map' [-Wimplicit-function-declaration]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                   ^~~~~~
+..\src\Controller.c:589:18: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   sueldoAumentado=ll_map(pArrayListEmployee,employee_increaseSalary);
+                  ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\sortTest.o" "..\\testing\\src\\sortTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\popTest.o" "..\\testing\\src\\popTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\cloneTest.o" "..\\testing\\src\\cloneTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\isEmptyTest.o" "..\\testing\\src\\isEmptyTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\removeTest.o" "..\\testing\\src\\removeTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+..\src\main.c: In function 'main':
+..\src\main.c:51:3: warning: implicit declaration of function 'menu' [-Wimplicit-function-declaration]
+   menu();
+   ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\containsAllTest.o" "..\\testing\\src\\containsAllTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\subListTest.o" "..\\testing\\src\\subListTest.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Employee.o" "..\\src\\Employee.c" 
+..\src\Employee.c: In function 'employee_increaseSalary':
+..\src\Employee.c:252:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+  int retorno=-1;
+      ^~~~~~~
+..\src\Employee.c:266:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "testing\\src\\deleteLinkedListTest.o" "..\\testing\\src\\deleteLinkedListTest.c" 
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file likedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:58:04 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Employee.o" "..\\src\\Employee.c" 
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file likedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:58:04 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file likedList.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:58:16 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 

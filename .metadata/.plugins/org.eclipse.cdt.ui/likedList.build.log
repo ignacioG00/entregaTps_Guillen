@@ -1,0 +1,6 @@
+12:58:16 **** Incremental Build of configuration Debug for project likedList ****
+Info: Internal Builder is used for build
+gcc -o likedList "src\\Biblioteca.o" "src\\Controller.o" "src\\Employee.o" "src\\LinkedList.o" "src\\main.o" "src\\menu.o" "src\\parser.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+
+12:58:17 Build Finished. 0 errors, 0 warnings. (took 251ms)
+
