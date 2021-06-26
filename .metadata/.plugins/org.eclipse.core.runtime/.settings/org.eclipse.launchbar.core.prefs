@@ -7,3 +7,5 @@ configDescList=org.eclipse.launchbar.core.descriptorType.default\:TrabajoPractic
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:TrabajoPracticoN\u00B03\ Guillen.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:TrabajoPracticoN\u00B03\ Guillen.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:likedList.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:likedList.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

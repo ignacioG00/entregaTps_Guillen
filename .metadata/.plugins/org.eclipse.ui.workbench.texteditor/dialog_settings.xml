@@ -6,6 +6,7 @@
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="TRABAJO PRACTICO N°"/>
 			<item value="flag"/>
 			<item value="menu"/>
 			<item value="Menu"/>
@@ -13,7 +14,6 @@
 			<item value="option"/>
 			<item value="cantLinkedList"/>
 			<item value="Alumno"/>
-			<item value="this"/>
 		</list>
 		<list key="replacehistory">
 			<item value="firstFlag"/>

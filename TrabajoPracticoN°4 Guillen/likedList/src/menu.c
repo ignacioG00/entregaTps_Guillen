@@ -1,10 +1,9 @@
 /*
  * 	UTN.c
- *	TRABAJO PRACTICO N°3
+ *	TRABAJO PRACTICO N°4
  *  DNI:42.432.724
  *  AUTHOR:IGNACIO GUILLEN
  */
-
 
 #include <stdio.h>
 #include <stdlib.h>

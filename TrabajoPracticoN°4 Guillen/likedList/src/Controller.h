@@ -1,3 +1,10 @@
+/*
+ * 	UTN.c
+ *	TRABAJO PRACTICO N°4
+ *  DNI:42.432.724
+ *  AUTHOR:IGNACIO GUILLEN
+ */
+
 #include "LinkedList.h"
 
 int controller_loadFromText(char* path , LinkedList* pArrayListEmployee);

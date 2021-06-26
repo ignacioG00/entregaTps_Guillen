@@ -111,4 +111,5 @@
 			<resource resourceType="PROJECT" workspacePath="/likedList"/>
 		</configuration>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>
